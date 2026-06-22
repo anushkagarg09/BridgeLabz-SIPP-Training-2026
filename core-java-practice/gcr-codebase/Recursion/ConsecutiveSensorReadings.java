@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class ConsecutiveSensorReadings {
 
-    // Recursive function to check if array is strictly increasing
+    
     static boolean isStrictlyIncreasing(int[] readings, int index) {
-        // Base case: reached end of array
+       
         if (index == readings.length - 1) {
             return true;
         }
 
-        // If current element is not less than next, return false
+        
         if (readings[index] >= readings[index + 1]) {
             return false;
         }
 
-        // Recursively check remaining elements
+        
         return isStrictlyIncreasing(readings, index + 1);
     }
 

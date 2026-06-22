@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Custom Exception
 class InsufficientFundsException extends Exception {
     public InsufficientFundsException(String message) {
         super(message);
@@ -9,7 +8,7 @@ class InsufficientFundsException extends Exception {
 
 public class HospitalBillingSystem {
 
-    // Method to process payment
+    
     public static void processPayment(double billAmount, double paymentAmount)
             throws InsufficientFundsException {
 
@@ -26,11 +25,11 @@ public class HospitalBillingSystem {
 
         Scanner sc = new Scanner(System.in);
 
-        // Sample patient bills
+        
         double[] patientBills = {2500, 4000, 3200, 1800};
 
         try {
-            // NumberFormatException Handling
+           
             System.out.print("Enter number of items in bill: ");
             String itemInput = sc.nextLine();
             int items = Integer.parseInt(itemInput);
@@ -39,17 +38,17 @@ public class HospitalBillingSystem {
             String billInput = sc.nextLine();
             double totalBill = Double.parseDouble(billInput);
 
-            // Division by Zero Handling
+            
             double averageCost = totalBill / items;
             System.out.println("Average cost per item: ₹" + averageCost);
 
-            // ArrayIndexOutOfBoundsException Handling
+            
             System.out.print("Enter patient index (0-3): ");
             int index = Integer.parseInt(sc.nextLine());
 
             System.out.println("Patient Bill: ₹" + patientBills[index]);
 
-            // Custom Exception Handling
+            
             System.out.print("Enter payment amount: ");
             double payment = Double.parseDouble(sc.nextLine());
 

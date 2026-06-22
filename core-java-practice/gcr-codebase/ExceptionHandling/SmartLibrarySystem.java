@@ -3,7 +3,7 @@ public class SmartLibrarySystem {
 
     public static void getBookLength(int index) {
         try {
-            // Attempt to access the array and get the length of the string
+            
             System.out.println("Length of book: " + books[index].length());
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: The index " + index + " is invalid for this library.");
@@ -13,7 +13,7 @@ public class SmartLibrarySystem {
     }
 
     public static void main(String[] args) {
-        // Testing scenarios
+        
         System.out.println(" Testing Invalid Index ");
         getBookLength(10); 
         
