@@ -1,0 +1,45 @@
+1. What is RDBMS?
+
+RDBMS is a database management system that stores data in the form of tables (relations) consisting of rows (tuples) and columns (attributes).
+
+Examples:
+
+MySQL
+Oracle Database
+Microsoft SQL Server
+PostgreSQL
+2. Features of RDBMS
+Data stored in tables
+Relationships between tables
+Primary Key & Foreign Key
+Data integrity
+Normalization
+SQL support
+ACID properties
+Security and concurrency control
+3. Key Terminology
+Term	Meaning
+Relation	Table
+Tuple	Row
+Attribute	Column
+Degree	Number of columns
+Cardinality	Number of rows
+Schema	Structure of database
+Instance	Current data in database
+4. Keys in RDBMS
+Primary Key
+Uniquely identifies each row.
+Cannot be NULL.
+CREATE TABLE Student(
+    RollNo INT PRIMARY KEY,
+    Name VARCHAR(50)
+);
+Candidate Key
+Can uniquely identify rows.
+One candidate key becomes primary key.
+Super Key
+Any set of attributes that uniquely identifies rows.
+Alternate Key
+Candidate keys not chosen as primary key.
+Foreign Key
+Creates relationship between tables.
